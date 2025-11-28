@@ -1,0 +1,42 @@
+Quero que você melhore o meu site, mantendo sua essência sensorial, acolhedora e elegante, e torne seu visual mais sofisticado, feminino e profissional. Atualize a seção “Sobre Mim” com o seguinte texto: “Tenho 25 anos e conto com 5 anos de experiência em massagens tântricas, body to body, terapêuticas, relaxantes e massagem Lomi Lomi. Sou venezuelana e me considero uma profissional comprometida em proporcionar bem-estar, relaxamento e uma experiência de conexão corporal consciente. Meu enfoque é baseado no respeito, na técnica, na sensibilidade e na capacidade de adaptar cada sessão às necessidades de cada pessoa, garantindo um ambiente seguro, confortável e harmonioso. Já transformei mais de 350 clientes através do toque consciente e terapêutico.”
+
+Na parte de serviços, crie cards individuais, cada um contendo: título, valor, pequena descrição com botão “Ler mais”, indicação do ambiente (marquesa ou tatami) e tempo de duração quando aplicável. O texto completo de cada serviço deve ser colocado no “Ler mais” para evitar cards muito grandes. Os serviços que devem ser incluídos são:
+
+Harmony Relax – 50€
+Mergulhe em uma experiência de serenidade com a nossa massagem Harmony Relax. Aproveite uma hora completa de técnicas profundas de relaxamento, aplicadas em uma marquesa especialmente projetada para o seu conforto. Em um ambiente acolhedor e envolvente, cada movimento é pensado para liberar tensões e renovar sua energia. Permita-se um descanso total e alcance um estado de paz interior com o Harmony Relax.
+
+Therapeutic Relax – 80€
+Nossa massagem Deep Healing Therapy foi desenvolvida para aliviar tensões profundas, liberar contraturas e melhorar a mobilidade muscular. Feita em uma marquesa, utiliza técnicas específicas que trabalham sobre pontos de grande rigidez. Durante uma hora, manobras firmes e pausadas ajudam a desfazer nós musculares, melhorar a circulação e restaurar o equilíbrio natural do corpo. Ideal para quem sofre de estresse, dores musculares, má postura ou sobrecarga física.
+
+Divine Energy Massage – Massagem Tântrica – 130€
+O Divine Energy Massage é uma fusão entre sabedoria tântrica e energia divina. Realizado em tatami, com música suave e luzes quentes, ativa canais energéticos através de toques conscientes e profundos. Promove conexão interior, liberação emocional e bem-estar integral, levando o paciente a um estado de harmonia e plenitude.
+
+Nuru Essence Massage – 160€
+O Nuru Essence Massage une deslizamento corporal e calor do óleo quente em um tatami, criando uma atmosfera de calma, sensualidade e conexão. Durante uma hora, o contato pele com pele e o óleo quente produzem um deslizamento envolvente que libera tensões e induz profunda relaxação e bem-estar.
+
+Massagem Lingam–Yoni – 80€
+Técnica terapêutica da tradição tântrica que busca equilibrar energia sexual e emocional, promovendo bem-estar e conexão interior. Realizada com respeito e consciência, trabalha zonas energéticas íntimas para liberar tensões acumuladas, desbloquear emoções e ampliar sensibilidade corporal. Ajuda a relaxar a musculatura profunda, harmonizar energia sexual, melhorar circulação, promover calma e fortalecer o autoconhecimento. A experiência vai além de uma massagem tradicional, sendo um convite à cura e expansão vital.
+
+Armonía Sensual Podal – 140€
+Uma experiência única de relaxamento e prazer focada nos pés. Movimentos suaves e técnicas especializadas estimulam pontos nervosos, promovendo circulação, alívio da fadiga e revitalização dos sentidos. Em atmosfera tranquila, cada sessão se transforma em um momento de equilíbrio e renovação sensorial.
+
+Armonía de Sentidos – 100€
+Uma viagem sensorial realizada em marquesa ao longo de uma hora, com toque delicado e técnicas que despertam e harmonizam os sentidos. A terapeuta utiliza movimentos precisos para liberar tensões, reduzir estresse e fortalecer a conexão corpo–mente. A experiência é envolvente, elegante e profundamente relaxante.
+
+Lomi Lomi Serenidad – 70€
+Inspirado no oceano, o Lomi Lomi Serenidad utiliza antebraços para criar movimentos fluidos e contínuos, como ondas do mar. Em uma marquesa, o ambiente transmite paz e harmonia enquanto tensões são aliviadas e a energia vital restaurada, promovendo um estado profundo de tranquilidade.
+
+Ritual Terapêutico com Velas – 70€
+Massagem de uma hora realizada com cera quente de velas especiais, que hidrata a pele enquanto técnicas relaxantes aliviam tensões e restauram a energia. Um ritual sensorial que revitaliza corpo e mente em clima de serenidade.
+
+Reflexologia Vital Balance – 40€ / 50 minutos
+Terapia realizada na marquesa que estimula pontos reflexos nos pés relacionados a órgãos internos. Pressões rítmicas liberam tensões, melhoram a circulação e equilibram a energia interna. Ideal para quem busca relaxamento profundo, alívio do estresse e ativação dos processos naturais de autocura.
+
+Glow & Relax Ritual – 150€
+Ritual completo que inclui 40 minutos de esfoliação corporal, 20 minutos de esfoliação facial com hidratação e 50 minutos de massagem relaxante. Proporciona renovação intensa, pele radiante e sensação plena de bem-estar e revitalização.
+
+Separe os cards e coloque “Ler mais” nas descrições completas.
+
+Adicione também um carrossel moderno, com fotos e vídeos do espaço de trabalho, incluindo tatami, marquesa, iluminação quente, ambiente acolhedor e detalhes sensoriais. O carrossel deve transmitir conforto, elegância, segurança e energia suave.
+
+Melhore o visual geral do site utilizando uma estética sofisticada e feminina, tipografia elegante e imagens semelhantes à referência "ref.png", com luz quente, atmosfera sensorial, suavidade e elegância.

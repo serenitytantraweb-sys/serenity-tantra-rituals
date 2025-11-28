@@ -1,0 +1,571 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tantra Espiritual - Jornada Sagrada de Autoconhecimento</title>
+  <meta name="description" content="Experimente a união do corpo, mente e espírito através da massagem tântrica e práticas budistas contemporâneas">
+  <link rel="icon" type="image/png" href="/favicon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Navigation -->
+  <nav id="main-nav" class="nav">
+    <div class="nav-container">
+      <div class="nav-content">
+        <button class="logo-button" data-testid="button-logo">
+          <div class="logo-icon">
+            <svg viewBox="0 0 24 24" fill="none">
+              <circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="1" class="primary-stroke" />
+              <path d="M12 2 L12 22 M2 12 L22 12" stroke="currentColor" stroke-width="0.5" class="primary-stroke-light" />
+              <circle cx="12" cy="12" r="3" fill="currentColor" class="primary-fill" />
+            </svg>
+          </div>
+          <span class="logo-text">Tantra Espiritual</span>
+        </button>
+
+        <!-- Desktop Navigation -->
+        <div class="nav-desktop">
+          <button class="nav-link" data-section="hero" data-testid="link-nav-início">Início</button>
+          <button class="nav-link" data-section="about" data-testid="link-nav-sobre">Sobre</button>
+          <button class="nav-link" data-section="services" data-testid="link-nav-serviços">Serviços</button>
+          <button class="nav-link" data-section="gallery" data-testid="link-nav-galeria">Galeria</button>
+          <button class="nav-link" data-section="blog" data-testid="link-nav-blog">Blog</button>
+          <button class="nav-link" data-section="contact" data-testid="link-nav-contato">Contato</button>
+          <button class="btn btn-primary btn-sm nav-cta" data-section="schedule" data-testid="button-nav-schedule">Agendar Sessão</button>
+        </div>
+
+        <!-- Mobile Menu Button -->
+        <button class="btn btn-ghost btn-icon nav-mobile-toggle" id="mobile-menu-toggle" data-testid="button-mobile-menu">
+          <svg class="menu-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M3 12h18M3 6h18M3 18h18" />
+          </svg>
+          <svg class="close-icon hidden" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M18 6L6 18M6 6l12 12" />
+          </svg>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Mobile Menu Overlay -->
+  <div class="mobile-menu hidden" id="mobile-menu">
+    <div class="mobile-menu-content">
+      <button class="mobile-menu-link" data-section="hero" data-testid="link-mobile-início">Início</button>
+      <button class="mobile-menu-link" data-section="about" data-testid="link-mobile-sobre">Sobre</button>
+      <button class="mobile-menu-link" data-section="services" data-testid="link-mobile-serviços">Serviços</button>
+      <button class="mobile-menu-link" data-section="gallery" data-testid="link-mobile-galeria">Galeria</button>
+      <button class="mobile-menu-link" data-section="blog" data-testid="link-mobile-blog">Blog</button>
+      <button class="mobile-menu-link" data-section="contact" data-testid="link-mobile-contato">Contato</button>
+      <button class="btn btn-primary btn-lg mobile-menu-cta" data-section="schedule" data-testid="button-mobile-schedule">Agendar Sessão</button>
+    </div>
+  </div>
+
+  <!-- Hero Section -->
+  <section id="hero" class="hero-section">
+    <div class="hero-bg">
+      <img src="images/hero_silhouette_meditative_pose.png" alt="Silhueta meditativa" class="hero-bg-image">
+      <div class="hero-bg-gradient"></div>
+    </div>
+
+    <div class="hero-particles-container">
+      <canvas id="hero-canvas" class="hero-canvas"></canvas>
+    </div>
+
+    <div class="hero-content">
+      <div class="hero-inner">
+        <div class="hero-mandala">
+          <img src="images/golden_mandala_sacred_pattern.png" alt="Mandala" class="mandala-image">
+        </div>
+
+        <h1 class="hero-title">
+          Jornada Sagrada de <br>
+          <span class="hero-title-accent">Autoconhecimento</span>
+        </h1>
+
+        <p class="hero-subtitle">
+          Experimente a união do corpo, mente e espírito através da massagem tântrica e práticas budistas contemporâneas
+        </p>
+
+        <div class="hero-buttons">
+          <button class="btn btn-primary btn-lg btn-hero" data-section="schedule" data-testid="button-hero-schedule">Agendar Sessão</button>
+          <button class="btn btn-outline btn-lg btn-hero" data-section="about" data-testid="button-hero-learn">Saber Mais</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="scroll-indicator">
+      <div class="scroll-indicator-box">
+        <div class="scroll-indicator-dot"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="about-section section">
+    <div class="container">
+      <div class="about-grid">
+        <div class="about-image-col">
+          <div class="about-image-wrapper">
+            <img src="images/about_portrait_shoulders_back.png" alt="Retrato artístico" class="about-image" data-testid="img-about-portrait">
+          </div>
+          <div class="about-mandala-decoration">
+            <img src="images/golden_mandala_sacred_pattern.png" alt="">
+          </div>
+        </div>
+
+        <div class="about-content-col">
+          <div class="section-badge">
+            <svg class="section-badge-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M12 2a4 4 0 0 0-4 4v2a4 4 0 0 0 4 4 4 4 0 0 0 4-4V6a4 4 0 0 0-4-4zM7 12a5 5 0 0 0-5 5v3h5m7-8a5 5 0 0 1 5 5v3h-5"/>
+            </svg>
+            <span>Sobre Mim</span>
+          </div>
+
+          <h2 class="section-title" data-testid="heading-about">
+            Uma Jornada de <br>
+            Presença e Energia
+          </h2>
+
+          <div class="about-text">
+            <p>
+              Há mais de uma década, dedico-me à prática sagrada da massagem tântrica, integrando sabedoria budista ancestral com técnicas contemporâneas de despertar energético.
+            </p>
+            <p>
+              Cada sessão é uma cerimônia íntima, um espaço sagrado onde corpo e espírito se reconectam através do toque consciente, da respiração e da presença plena.
+            </p>
+            <p>
+              Formada em terapias holísticas e praticante de meditação vipassana, acredito que o tantra é um caminho de libertação, autoconhecimento e expansão da consciência.
+            </p>
+          </div>
+
+          <div class="about-stats">
+            <div class="about-stat">
+              <div class="about-stat-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M12 2 L12 22 M2 12 L22 12"/>
+                  <circle cx="12" cy="12" r="3"/>
+                </svg>
+              </div>
+              <div class="about-stat-content">
+                <p class="about-stat-value">10+ Anos</p>
+                <p class="about-stat-label">de Experiência</p>
+              </div>
+            </div>
+
+            <div class="about-stat">
+              <div class="about-stat-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/>
+                </svg>
+              </div>
+              <div class="about-stat-content">
+                <p class="about-stat-value">500+ Clientes</p>
+                <p class="about-stat-label">Transformados</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Services Section -->
+  <section id="services" class="services-section section">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-badge">
+          <svg class="section-badge-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M12 2a4 4 0 0 0-4 4v2a4 4 0 0 0 4 4 4 4 0 0 0 4-4V6a4 4 0 0 0-4-4zM7 12a5 5 0 0 0-5 5v3h5m7-8a5 5 0 0 1 5 5v3h-5"/>
+          </svg>
+          <span>Serviços</span>
+        </div>
+        <h2 class="section-title">Experiências Sagradas</h2>
+        <p class="section-subtitle">
+          Cada serviço é cuidadosamente elaborado para despertar energia, expandir consciência e nutrir o corpo-templo
+        </p>
+      </div>
+
+      <div id="services-grid" class="services-grid">
+        <!-- Services will be loaded here by JavaScript -->
+        <div class="skeleton-card"></div>
+        <div class="skeleton-card"></div>
+        <div class="skeleton-card"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Philosophy Section -->
+  <section class="philosophy-section">
+    <div class="philosophy-bg">
+      <img src="images/temple_meditation_space_background.png" alt="Templo budista" class="philosophy-bg-image">
+      <div class="philosophy-bg-overlay"></div>
+    </div>
+
+    <div class="philosophy-content">
+      <blockquote class="philosophy-quote">
+        <p class="philosophy-text">
+          "O tantra não é sobre prazer ou renúncia. É sobre presença total, consciência expandida e a união do finito com o infinito."
+        </p>
+        <footer class="philosophy-author">
+          — Filosofia Budista Contemporânea
+        </footer>
+      </blockquote>
+    </div>
+  </section>
+
+  <!-- Gallery Section -->
+  <section id="gallery" class="gallery-section section">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-badge">
+          <svg class="section-badge-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M12 2a4 4 0 0 0-4 4v2a4 4 0 0 0 4 4 4 4 0 0 0 4-4V6a4 4 0 0 0-4-4zM7 12a5 5 0 0 0-5 5v3h5m7-8a5 5 0 0 1 5 5v3h-5"/>
+          </svg>
+          <span>Galeria</span>
+        </div>
+        <h2 class="section-title">Arte & Espiritualidade</h2>
+      </div>
+
+      <div class="gallery-grid">
+        <div class="gallery-item" data-testid="gallery-item-0">
+          <img src="images/gallery_artistic_back_silhouette.png" alt="Arte corporal sensual" class="gallery-image" data-testid="img-gallery-0">
+        </div>
+        <div class="gallery-item" data-testid="gallery-item-1">
+          <img src="images/spa_stones_lotus_candles.png" alt="Pedras de massagem e lótus" class="gallery-image" data-testid="img-gallery-1">
+        </div>
+        <div class="gallery-item" data-testid="gallery-item-2">
+          <img src="images/meditation_mudra_hands_gesture.png" alt="Mudra de meditação" class="gallery-image" data-testid="img-gallery-2">
+        </div>
+        <div class="gallery-item" data-testid="gallery-item-3">
+          <img src="images/golden_mandala_sacred_pattern.png" alt="Mandala dourada sagrada" class="gallery-image" data-testid="img-gallery-3">
+        </div>
+        <div class="gallery-item" data-testid="gallery-item-4">
+          <img src="images/golden_lotus_temple_carving.png" alt="Lótus dourado templo" class="gallery-image" data-testid="img-gallery-4">
+        </div>
+        <div class="gallery-item" data-testid="gallery-item-5">
+          <img src="images/luxury_silk_fabric_draping.png" alt="Tecidos de luxo" class="gallery-image" data-testid="img-gallery-5">
+        </div>
+        <div class="gallery-item" data-testid="gallery-item-6">
+          <img src="images/gallery_legs_yoga_pose.png" alt="Pose de yoga artística" class="gallery-image" data-testid="img-gallery-6">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Scheduling Section -->
+  <section id="schedule" class="schedule-section section">
+    <div class="container-md">
+      <div class="section-header">
+        <div class="section-badge">
+          <svg class="section-badge-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M12 2a4 4 0 0 0-4 4v2a4 4 0 0 0 4 4 4 4 0 0 0 4-4V6a4 4 0 0 0-4-4zM7 12a5 5 0 0 0-5 5v3h5m7-8a5 5 0 0 1 5 5v3h-5"/>
+          </svg>
+          <span>Agendamento</span>
+        </div>
+        <h2 class="section-title">Reserve Sua Sessão</h2>
+        <p class="section-subtitle">
+          Escolha o serviço, data e horário de sua preferência. Aguardamos você nesta jornada sagrada.
+        </p>
+      </div>
+
+      <div class="card schedule-card">
+        <form id="schedule-form" class="schedule-form">
+          <div class="form-group">
+            <label for="schedule-service" class="form-label">Serviço</label>
+            <select id="schedule-service" class="form-select" data-testid="select-schedule-service" required>
+              <option value="">Selecione um serviço</option>
+            </select>
+          </div>
+
+          <div class="form-row">
+            <div class="form-group">
+              <label for="schedule-name" class="form-label">Nome Completo</label>
+              <input type="text" id="schedule-name" class="form-input" placeholder="Seu nome" data-testid="input-schedule-name" required minlength="2">
+            </div>
+            <div class="form-group">
+              <label for="schedule-email" class="form-label">Email</label>
+              <input type="email" id="schedule-email" class="form-input" placeholder="seu@email.com" data-testid="input-schedule-email" required>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="schedule-phone" class="form-label">Telefone</label>
+            <input type="tel" id="schedule-phone" class="form-input" placeholder="(11) 99999-9999" data-testid="input-schedule-phone" required minlength="10">
+          </div>
+
+          <div class="form-row">
+            <div class="form-group">
+              <label for="schedule-date" class="form-label">Data</label>
+              <input type="date" id="schedule-date" class="form-input" data-testid="input-schedule-date" required>
+            </div>
+            <div class="form-group">
+              <label for="schedule-time" class="form-label">Horário</label>
+              <select id="schedule-time" class="form-select" data-testid="select-schedule-time" required>
+                <option value="">Selecione um horário</option>
+                <option value="09:00">09:00</option>
+                <option value="10:00">10:00</option>
+                <option value="11:00">11:00</option>
+                <option value="12:00">12:00</option>
+                <option value="14:00">14:00</option>
+                <option value="15:00">15:00</option>
+                <option value="16:00">16:00</option>
+                <option value="17:00">17:00</option>
+                <option value="18:00">18:00</option>
+                <option value="19:00">19:00</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="schedule-notes" class="form-label">Observações (Opcional)</label>
+            <textarea id="schedule-notes" class="form-textarea" placeholder="Alguma observação ou dúvida?" rows="4" data-testid="textarea-schedule-notes"></textarea>
+          </div>
+
+          <button type="submit" class="btn btn-primary btn-lg btn-full" id="schedule-submit" data-testid="button-schedule-submit">
+            Confirmar Agendamento
+          </button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- Blog Section -->
+  <section id="blog" class="blog-section section">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-badge">
+          <svg class="section-badge-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M12 2a4 4 0 0 0-4 4v2a4 4 0 0 0 4 4 4 4 0 0 0 4-4V6a4 4 0 0 0-4-4zM7 12a5 5 0 0 0-5 5v3h5m7-8a5 5 0 0 1 5 5v3h-5"/>
+          </svg>
+          <span>Blog</span>
+        </div>
+        <h2 class="section-title">Sabedoria & Reflexões</h2>
+        <p class="section-subtitle">
+          Artigos sobre tantra, espiritualidade, práticas budistas e o caminho do autoconhecimento
+        </p>
+      </div>
+
+      <div id="blog-grid" class="blog-grid">
+        <!-- Blog posts will be loaded here by JavaScript -->
+        <div class="skeleton-card"></div>
+        <div class="skeleton-card"></div>
+        <div class="skeleton-card"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="contact-section section">
+    <div class="container">
+      <div class="contact-grid">
+        <div class="contact-form-col">
+          <div class="contact-header">
+            <div class="section-badge">
+              <svg class="section-badge-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M12 2a4 4 0 0 0-4 4v2a4 4 0 0 0 4 4 4 4 0 0 0 4-4V6a4 4 0 0 0-4-4zM7 12a5 5 0 0 0-5 5v3h5m7-8a5 5 0 0 1 5 5v3h-5"/>
+              </svg>
+              <span>Contato</span>
+            </div>
+            <h2 class="section-title-left">Entre em Contato</h2>
+            <p class="contact-description">
+              Tem dúvidas ou quer saber mais sobre as sessões? Envie uma mensagem e retornarei em breve.
+            </p>
+          </div>
+
+          <form id="contact-form" class="contact-form">
+            <div class="form-group">
+              <label for="contact-name" class="form-label">Nome</label>
+              <input type="text" id="contact-name" class="form-input" placeholder="Seu nome" data-testid="input-contact-name" required>
+            </div>
+
+            <div class="form-row">
+              <div class="form-group">
+                <label for="contact-email" class="form-label">Email</label>
+                <input type="email" id="contact-email" class="form-input" placeholder="seu@email.com" data-testid="input-contact-email" required>
+              </div>
+              <div class="form-group">
+                <label for="contact-phone" class="form-label">Telefone (Opcional)</label>
+                <input type="tel" id="contact-phone" class="form-input" placeholder="(11) 99999-9999" data-testid="input-contact-phone">
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="contact-subject" class="form-label">Assunto</label>
+              <input type="text" id="contact-subject" class="form-input" placeholder="Como podemos ajudar?" data-testid="input-contact-subject" required>
+            </div>
+
+            <div class="form-group">
+              <label for="contact-message" class="form-label">Mensagem</label>
+              <textarea id="contact-message" class="form-textarea" placeholder="Sua mensagem..." rows="6" data-testid="textarea-contact-message" required minlength="20"></textarea>
+            </div>
+
+            <button type="submit" class="btn btn-primary btn-lg btn-full" id="contact-submit" data-testid="button-contact-submit">
+              Enviar Mensagem
+            </button>
+          </form>
+        </div>
+
+        <div class="contact-info-col">
+          <div class="card contact-info-card">
+            <h3 class="contact-info-title">Informações</h3>
+            <div class="contact-info-list">
+              <div class="contact-info-item">
+                <div class="contact-info-icon">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
+                  </svg>
+                </div>
+                <div>
+                  <p class="contact-info-label">Telefone</p>
+                  <p class="contact-info-value">+55 (11) 99999-9999</p>
+                </div>
+              </div>
+
+              <div class="contact-info-item">
+                <div class="contact-info-icon">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+                    <polyline points="22,6 12,13 2,6"/>
+                  </svg>
+                </div>
+                <div>
+                  <p class="contact-info-label">Email</p>
+                  <p class="contact-info-value">contato@tantraespiritual.com</p>
+                </div>
+              </div>
+
+              <div class="contact-info-item">
+                <div class="contact-info-icon">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/>
+                    <circle cx="12" cy="10" r="3"/>
+                  </svg>
+                </div>
+                <div>
+                  <p class="contact-info-label">Localização</p>
+                  <p class="contact-info-value">São Paulo, SP</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <!-- Brand Column -->
+        <div class="footer-col">
+          <div class="footer-brand">
+            <div class="footer-logo">
+              <svg viewBox="0 0 24 24" fill="none">
+                <circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="1" class="primary-stroke" />
+                <circle cx="12" cy="12" r="3" fill="currentColor" class="primary-fill" />
+              </svg>
+            </div>
+            <h3 class="footer-brand-name">Tantra Espiritual</h3>
+          </div>
+          <p class="footer-description">
+            Jornada sagrada de autoconhecimento através da massagem tântrica e práticas budistas contemporâneas.
+          </p>
+          <div class="footer-social">
+            <button class="btn btn-ghost btn-icon" data-testid="link-social-instagram">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <rect x="2" y="2" width="20" height="20" rx="5" ry="5"/>
+                <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/>
+                <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/>
+              </svg>
+            </button>
+            <button class="btn btn-ghost btn-icon" data-testid="link-social-facebook">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/>
+              </svg>
+            </button>
+          </div>
+        </div>
+
+        <!-- Quick Links -->
+        <div class="footer-col">
+          <h4 class="footer-title">Links Rápidos</h4>
+          <nav class="footer-links">
+            <button class="footer-link" data-section="about" data-testid="link-footer-sobre-mim">Sobre Mim</button>
+            <button class="footer-link" data-section="services" data-testid="link-footer-serviços">Serviços</button>
+            <button class="footer-link" data-section="gallery" data-testid="link-footer-galeria">Galeria</button>
+            <button class="footer-link" data-section="blog" data-testid="link-footer-blog">Blog</button>
+            <button class="footer-link" data-section="schedule" data-testid="link-footer-agendar">Agendar</button>
+          </nav>
+        </div>
+
+        <!-- Contact Info -->
+        <div class="footer-col">
+          <h4 class="footer-title">Contato</h4>
+          <div class="footer-contacts">
+            <div class="footer-contact" data-testid="text-contact-phone">
+              <svg class="footer-contact-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
+              </svg>
+              <span>+55 (11) 99999-9999</span>
+            </div>
+            <div class="footer-contact" data-testid="text-contact-email">
+              <svg class="footer-contact-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+                <polyline points="22,6 12,13 2,6"/>
+              </svg>
+              <span>contato@tantraespiritual.com</span>
+            </div>
+            <div class="footer-contact" data-testid="text-contact-address">
+              <svg class="footer-contact-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/>
+                <circle cx="12" cy="10" r="3"/>
+              </svg>
+              <span>São Paulo, SP</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Newsletter -->
+        <div class="footer-col">
+          <h4 class="footer-title">Newsletter</h4>
+          <p class="footer-newsletter-text">
+            Receba conteúdos sobre tantra, espiritualidade e bem-estar.
+          </p>
+          <form class="footer-newsletter-form" onsubmit="return false;">
+            <input type="email" class="form-input" placeholder="Seu email" data-testid="input-newsletter-email">
+            <button type="submit" class="btn btn-primary btn-sm" data-testid="button-newsletter-submit">Inscrever-se</button>
+          </form>
+        </div>
+      </div>
+
+      <!-- Bottom Bar -->
+      <div class="footer-bottom">
+        <p data-testid="text-copyright">© 2025 Tantra Espiritual. Todos os direitos reservados.</p>
+        <div class="footer-bottom-links">
+          <button class="footer-bottom-link" data-testid="link-privacy">Privacidade</button>
+          <button class="footer-bottom-link" data-testid="link-terms">Termos de Uso</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Watermark -->
+    <div class="footer-watermark">
+      <svg viewBox="0 0 100 100">
+        <circle cx="50" cy="50" r="40" stroke="currentColor" stroke-width="0.5" fill="none" class="primary-stroke" />
+        <circle cx="50" cy="50" r="10" fill="currentColor" class="primary-fill" />
+      </svg>
+    </div>
+  </footer>
+
+  <!-- Toast Notification Container -->
+  <div id="toast-container" class="toast-container"></div>
+
+  <!-- JavaScript -->
+  <script src="app.js"></script>
+</body>
+</html>
