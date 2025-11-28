@@ -1,0 +1,21 @@
+{
+  "name": "tantra-espiritual",
+  "version": "1.0.0",
+  "description": "Site de massagens terapêuticas e tântricas em Portugal",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "nodemon server.js"
+  },
+  "dependencies": {
+    "express": "^4.18.2",
+    "cors": "^2.8.5",
+    "googleapis": "^126.0.1"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.1"
+  },
+  "keywords": ["tantra", "massagem", "wellness", "therapy", "portugal"],
+  "author": "Tantra Espiritual",
+  "license": "MIT"
+}
